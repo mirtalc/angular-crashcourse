@@ -1,0 +1,28 @@
+Folder structure & other files
+============================
+> e2e                   for end-to-end testing. We won't use it.
+> node_modules          contains the project's dependencies
+> src                   contains most of our code
+    > app               includes the routing, components, and more
+    > assets
+    > environments
+    ..index.html        entry point to the app, and you generally don't touch this file.
+    ..styles.scss       where your global CSS rulesets will reside
+  
+
+Angular CLI commands
+============================
+ng serve
+    Runs the project. Default port is 4200
+ng serve -o
+    (open) It also opens the browser with that location
+
+
+Router
+============================
+routerLink
+    Ex: <a href="#" routerLink="/list">Breweries</a>
+    This is how you link together different pages of your app. You don't use href.
+router-outlet
+    Ex: <router-outlet></router-outlet>
+    This is where routed components are displayed within the template. 
