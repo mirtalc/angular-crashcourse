@@ -16,7 +16,7 @@
 </div>
 
 <!--    ng-template with "if" directive -->
-<div class="play-container">
+<div class="play-container" [ngClass]="setClasses()">
     <ng-template [ngIf]="numberOfClicks > 4" [ngIfElse]="notmanyclicks">
         <p>You've clicked <strong>more</strong> than 4 times.</p>
     </ng-template>
