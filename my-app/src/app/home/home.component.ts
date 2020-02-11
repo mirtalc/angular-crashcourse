@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
     // Properties
     numberOfClicks: number = 0;
+    name: string = 'Change this!';
 
     // Methods
     constructor() { }

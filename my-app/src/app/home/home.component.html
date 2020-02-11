@@ -1,8 +1,16 @@
-<p>home works!</p>
 <h1>Welcome!</h1>
 
+<!--    One way data binding (with Interpolation) -->
 <div class="play-container">
     <!--    Moustache syntax {{ }} ==> Interpolation    -->
     <!--    (click) ==> Event binding in Angular    -->
     <p>You've clicked <span (click)="countClick()">this</span> {{ numberOfClicks }} times</p>
+</div>
+
+<!--    Two way data binding -->
+<div class="play-container">
+    <!-- Banana in a box syntax [()] -->
+    <input type="text" [(ngModel)]="name">
+    <br>
+    <strong>You said: </strong> {{ name }}
 </div>

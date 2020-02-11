@@ -10,5 +10,10 @@ span{
 .play-container{
     border: 1px solid lightgray;
     margin-bottom: 1em;
-    padding: 3em;    
+    padding: 3em;
+
+    input{
+        padding: 1em;
+        margin-bottom: 2em;
+    }
 }
