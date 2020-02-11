@@ -26,3 +26,7 @@ routerLink
 router-outlet
     Ex: <router-outlet></router-outlet>
     This is where routed components are displayed within the template. 
+
+# Generate components (home & list)
+ng g c home
+ng g c list
