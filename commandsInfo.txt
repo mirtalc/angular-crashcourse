@@ -16,7 +16,10 @@ ng serve
     Runs the project. Default port is 4200
 ng serve -o
     (open) It also opens the browser with that location
-
+ng generate component home || ng g c home
+    generates the home component
+ng generate service http || ng g s http
+    generates the http service
 
 Router
 ============================
