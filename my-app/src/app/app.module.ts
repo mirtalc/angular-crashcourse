@@ -9,6 +9,9 @@ import { ListComponent } from './list/list.component';
 // Import FormsModule in order to use [(ngModel)]
 import { FormsModule } from '@angular/forms';
 
+// Import in order to use the HttpClient from our service
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -18,7 +21,8 @@ import { FormsModule } from '@angular/forms';
     imports: [
         BrowserModule,
         AppRoutingModule,
-        FormsModule
+        FormsModule,
+        HttpClientModule
     ],
     providers: [],
     bootstrap: [AppComponent]
