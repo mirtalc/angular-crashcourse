@@ -14,3 +14,14 @@
     <br>
     <strong>You said: </strong> {{ name }}
 </div>
+
+<!--    ng-template with "if" directive -->
+<div class="play-container">
+    <ng-template [ngIf]="numberOfClicks > 4" [ngIfElse]="notmanyclicks">
+        <p>You've clicked <strong>more</strong> than 4 times.</p>
+    </ng-template>
+
+    <ng-template #notmanyclicks>
+        <p>You've clicked <strong>not more</strong> than 4 times.</p>
+    </ng-template>
+</div>

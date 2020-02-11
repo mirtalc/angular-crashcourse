@@ -30,3 +30,28 @@ router-outlet
 # Generate components (home & list)
 ng g c home
 ng g c list
+
+ngIf (from angular.io)
+============================
+Simple form with shorthand syntax:
+    <div *ngIf="condition">Content to render when condition is true.</div>
+
+Simple form with expanded syntax:
+    <ng-template [ngIf]="condition">
+        <div>Content to render when condition is true.</div>
+    </ng-template>
+
+Else block with shorthand syntax:
+    <div *ngIf="condition; else elseBlock">Content to render when condition is true.</div>
+    <ng-template #elseBlock>
+        Content to render when condition is false.
+    </ng-template>
+
+Then and Else block with shorthand syntax:
+    <div *ngIf="condition; then thenBlock else elseBlock"></div>
+    <ng-template #thenBlock>
+        Content to render when condition is true.
+    </ng-template>
+    <ng-template #elseBlock>
+        Content to render when condition is false.
+    </ng-template>
