@@ -20,6 +20,9 @@ ng generate component home || ng g c home
     generates the home component
 ng generate service http || ng g s http
     generates the http service
+ng build --prod
+    creates a dist folder with the production build.
+    We can then install lite-server and use it to open it in our browser (or use another web server)
 
 Router
 ============================
